@@ -1,0 +1,57 @@
+<div class="container">
+  <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+    <div class="row my-3">
+      <div class="col-6">
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Full name"
+          formControlName="name"
+        />
+      </div>
+      <div class="col-6">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Email address"
+          formControlName="email"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="mb-1" for="#">Address:</label>
+      <div class="col-6">
+        <input
+          type="text"
+          class="form-control"
+          id="street"
+          placeholder="street"
+          formControlName="street"
+        />
+      </div>
+      <div class="col-6">
+        <input
+          type="text"
+          class="form-control"
+          id="city"
+          placeholder="city"
+          formControlName="city"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-6">
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          placeholder="Phone Number"
+          formControlName="phone"
+        />
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Data</button>
+  </form>
+</div>
